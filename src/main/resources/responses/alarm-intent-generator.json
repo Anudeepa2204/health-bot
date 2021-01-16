@@ -21,6 +21,12 @@
                 },
                 {
                   "text": "10AM"
+                },
+                {
+                  "text": "11AM"
+                },
+                {
+                  "text": "12 Noon"
                 }
               ],
               "type": "chips"
