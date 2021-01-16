@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,8 +26,8 @@ public class AlarmController {
   }
 
   @PostMapping("welcome")
-  public String welcomeIntent(@RequestParam("data") String data) {
-    Log.info("data from dialogflow: {}", data);
+  public String welcomeIntent(@RequestBody String body) {
+    Log.info("data from dialogflow: {}", body);
     String response = "";
     InputStream stream = AlarmController.class.getClassLoader().getResourceAsStream("responses/alarm-intent-generator.json");
     InputStreamReader reader = new InputStreamReader(stream);
