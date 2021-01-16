@@ -3,6 +3,7 @@ package healthbot.server.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +20,14 @@ public class AlarmController {
     return "";
   }
 
+  @GetMapping("ping")
+  public String ping() {
+    return "Pong";
+  }
+
   @PostMapping("welcome")
   public String welcomeIntent(@RequestParam("data") String data) {
+    Log.info("data from dialogflow: {}", data);
     String response = "";
     InputStream stream = AlarmController.class.getResourceAsStream("alarm-intent-generator.json");
     InputStreamReader reader = new InputStreamReader(stream);
