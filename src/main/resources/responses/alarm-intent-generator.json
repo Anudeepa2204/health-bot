@@ -1,20 +1,22 @@
 {
-  "richContent": [
-    [
-      {
-        "type": "chips",
-        "options": [
-          {
-            "text": "Set Alarm"
-          },
-          {
-            "text": "Disable Alarm"
-          },
-          {
-            "text": "Change an Alarm"
-          }
-        ]
-      }
+  "fulfillmentText": {
+    "richContent": [
+      [
+        {
+          "type": "chips",
+          "options": [
+            {
+              "text": "8AM"
+            },
+            {
+              "text": "9AM"
+            },
+            {
+              "text": "10AM"
+            }
+          ]
+        }
+      ]
     ]
-  ]
+  }
 }
