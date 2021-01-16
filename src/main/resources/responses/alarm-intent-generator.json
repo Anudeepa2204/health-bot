@@ -1,22 +1,33 @@
 {
-  "fulfillmentText": {
-    "richContent": [
-      [
-        {
-          "type": "chips",
-          "options": [
+  "fulfillmentMessages": [
+    {
+      "text": {
+        "text": [
+          "Please choose one of the options"
+        ]
+      }
+    },
+    {
+      "payload": {
+        "richContent": [
+          [
             {
-              "text": "8AM"
-            },
-            {
-              "text": "9AM"
-            },
-            {
-              "text": "10AM"
+              "options": [
+                {
+                  "text": "8AM"
+                },
+                {
+                  "text": "9AM"
+                },
+                {
+                  "text": "10AM"
+                }
+              ],
+              "type": "chips"
             }
           ]
-        }
-      ]
-    ]
-  }
+        ]
+      }
+    }
+  ]
 }
