@@ -1,0 +1,20 @@
+{
+  "richContent": [
+    [
+      {
+        "type": "chips",
+        "options": [
+          {
+            "text": "Set Alarm"
+          },
+          {
+            "text": "Disable Alarm"
+          },
+          {
+            "text": "Change an Alarm"
+          }
+        ]
+      }
+    ]
+  ]
+}
