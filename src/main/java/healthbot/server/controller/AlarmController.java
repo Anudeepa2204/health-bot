@@ -29,7 +29,7 @@ public class AlarmController {
   public String welcomeIntent(@RequestParam("data") String data) {
     Log.info("data from dialogflow: {}", data);
     String response = "";
-    InputStream stream = AlarmController.class.getResourceAsStream("alarm-intent-generator.json");
+    InputStream stream = AlarmController.class.getClassLoader().getResourceAsStream("responses/alarm-intent-generator.json");
     InputStreamReader reader = new InputStreamReader(stream);
     try {
       response = FileCopyUtils.copyToString(reader);
